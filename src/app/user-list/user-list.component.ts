@@ -9,6 +9,6 @@ export class UserListComponent {
   names : string[];
   naam : string = "jacob";
   constructor() {
-    this.names = ["John","parker","juan","Lawrence", "David","jean","Felix"];
+    this.names = ["John","parker","juan","Lawrence", "David","Rodolfo","Felix"];
   }
 }

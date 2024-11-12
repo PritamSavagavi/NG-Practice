@@ -20,3 +20,4 @@ import { UserItemComponent } from './user-item/user-item.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+//can you please explain the NgModule in angular?
