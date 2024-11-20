@@ -1,0 +1,22 @@
+/* app.component.css */
+.container {
+    display: flex;
+    flex-direction: row; /* Align components horizontally */
+    justify-content: space-between; /* Distribute space between the components */
+    gap: 20px; /* Optional: Adds some space between the two components */
+  }
+  
+  .form-container {
+    flex: 0 0 40%; /* Set width of the form container (40% of the screen width) */
+  }
+  
+  .article-container {
+    flex: 1; /* The article container takes the remaining space */
+  }
+  .divider {
+    width: 2px; /* Set the width of the divider */
+    background-color: #ccc; /* Set the color of the divider */
+    height: auto; /* Adjust height as needed */
+    align-self: stretch; /* Make the divider stretch to fill the height of the container */
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5); /* Enhanced box shadow */
+}

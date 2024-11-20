@@ -1,0 +1,13 @@
+
+<div class="form-container">
+    <h3>Form Heading</h3>
+    <form (ngSubmit)="onSubmit()">
+        <label for="title">Title:</label>
+        <input type="text" id="title" [(ngModel)]="title" name="title" #newTitle required>
+
+        <label for="link">Link:</label>
+        <input type="text" id="link" [(ngModel)]="link" name="link" #newLink required>
+
+        <input type="submit" value="Submit" (click)="AddArticle(newTitle, newLink)">
+    </form>
+</div>
