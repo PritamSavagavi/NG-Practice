@@ -4,11 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
+import { Test1Component } from './test1/test1.component';
+import { Test2Component } from './test2/test2.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    Test1Component,
+    Test2Component,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

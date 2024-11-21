@@ -1,0 +1,16 @@
+<div *ngFor="let item of articles" class="article-container">
+    <div class="vote-section">
+        <span class="vote-count">{{voteCount}}</span>
+    </div>
+    <div class="divider"></div>
+    <div class="article-details">
+        <h3 class="article-title">{{item.name}}</h3>
+        <a [href]="item.link" target="_blank" class="articleLink">Read Article</a>
+        <div class="voting-button">
+            <button (click)="upvote(item)" class="vote-btn upvote">UP</button>
+            <button (click)="downvote(item)" class="vote-btn downvote">DOWN</button>
+        </div>
+    </div>
+
+    
+</div>
