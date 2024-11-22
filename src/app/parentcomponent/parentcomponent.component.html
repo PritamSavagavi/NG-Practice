@@ -1,0 +1,5 @@
+
+<div class="parentdiv">
+    <h1>This is the message came from Child -> {{naame}}</h1>
+    <app-childcomponent (childEvent)="naame=$event" [ChildMessage] = "name"></app-childcomponent>
+</div>
