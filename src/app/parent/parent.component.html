@@ -1,0 +1,6 @@
+<div class="card">
+    <div class="container">
+        <app-child (baapEvent)="name = $event.name; address = $event.address" [nameValue]="name"></app-child>
+        <p>the address is : </p><h2>{{address}}</h2>
+    </div>
+</div>

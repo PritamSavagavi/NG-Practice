@@ -1,0 +1,9 @@
+ng g c grandChild --dry-run 
+PS I:\Project Data\Angular\NG-Practice> ng g c grandChild --dry-run 
+CREATE src/app/grand-child/grand-child.component.html (27 bytes)
+CREATE src/app/grand-child/grand-child.component.spec.ts (649 bytes)
+CREATE src/app/grand-child/grand-child.component.ts (229 bytes)     
+CREATE src/app/grand-child/grand-child.component.scss (0 bytes)     
+UPDATE src/app/app.module.ts (593 bytes)
+
+NOTE: The "--dry-run" option means no changes were made.
