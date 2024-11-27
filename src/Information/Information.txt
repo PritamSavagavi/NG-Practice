@@ -7,3 +7,8 @@ CREATE src/app/grand-child/grand-child.component.scss (0 bytes)
 UPDATE src/app/app.module.ts (593 bytes)
 
 NOTE: The "--dry-run" option means no changes were made.
+
+
+bhai hum inspect element me jake flex modification kar sakte hai waaaav!!
+
+apiService = inject(ApiService); instead of injecting using constructor we can do this ...

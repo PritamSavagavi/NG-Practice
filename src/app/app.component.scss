@@ -1,0 +1,13 @@
+*{
+   
+}
+.flex-box{
+  background-color: beige;
+  border: 1px solid green;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  li{
+    // padding: 1rem;
+  }
+}
