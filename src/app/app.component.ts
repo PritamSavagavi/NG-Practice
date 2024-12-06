@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   doSelect(event : any){
     console.log(event.target.value);
     console.log(event);
-    this.apiService.jokeId.next(event.target.value)
+    this.apiService.jokeId.next(event.target.value);
   }
 
 }

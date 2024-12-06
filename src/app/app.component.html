@@ -26,7 +26,8 @@
 
 
 <select (change)="doSelect($event)">
-  <option  *ngFor="let option of options; let i = index" value={{i}}>{{i}}</option>
+  <option  *ngFor="let option of options; let i = index" [value]="i">{{i}}</option>
 </select>
+<app-parent></app-parent>
 
 <router-outlet/>

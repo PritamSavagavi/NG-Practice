@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { Observable, Subject, map, tap } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, map, tap } from 'rxjs';
 import { joke } from '../interfaces/jokes';
 import { HttpClient } from '@angular/common/http';
 
@@ -10,7 +10,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
   http = inject(HttpClient);
-  jokeId = new Subject();
+  jokeId = new BehaviorSubject(0);
+  jokeId$ = this.jokeId.asObservable();
   getJokes(): Observable<any[]> {
    return this.http.get<any[]>("https://api.freeapi.app/api/v1/public/quotes").pipe(
     tap(console.log),map((res:any) => res.data.data),tap(console.log)
