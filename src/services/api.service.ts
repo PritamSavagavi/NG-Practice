@@ -19,5 +19,9 @@ export class ApiService {
   //  getJokkById(){
 
   //  }
+   //  getJokkById(){
+
+  //  }
   }
+
 }

@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     id:2,
     content: 'aba'
   }
-]
+];
   jokes$: any ;//Observable<joke[]> = [];
   apiService = inject(ApiService);
   ngOnInit(){
