@@ -23,3 +23,12 @@ git commit -a -m 'commit message'
 git pull
 resolve conflicts
 git push
+
+Checkout with new branch
+git checkout -b newBranchName
+
+switch branch
+git checkout branchName
+
+delete branch-- be on another branch then use below command
+git branch -d branchName
