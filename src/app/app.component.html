@@ -6,10 +6,24 @@
   <li>Berlin</li>
   <li>Helsinki</li>
 </ul>
-  <ul class="flex-box">
-    <li *ngFor="let item of jokes$ | async; let i = index">
-       <span *ngIf="i!=0">{{i}} {{ item.categories[0] }}</span>
-       <span *ngIf="i!=0">{{ item.content }}</span>
-      </li>
-  </ul>
+<ul class="flex-box">
+  <li *ngFor="let item of jokes$ | async; let i = index">
+      <!-- <span *ngIf="i!=0">{{i}} {{ item.categories[0] }}</span> -->
+      <span *ngIf="i!=0">{{ item.content }}</span>
+    </li>
+</ul>
+<ul class="flex-box">
+  <li *ngFor="let item of testData">
+      <span >{{ item.content }}</span>
+    </li>
+</ul>
+
+<select (change)="doSelect($event)">
+  <option  *ngFor="let data of testData" [value]="data.id">{{data.content}}</option>
+</select>
+
+<select (change)="doSelect($event)">
+  <option  *ngFor="let option of options; let i = index" value={{i}}>{{i}}</option>
+</select>
+
 <router-outlet/>
