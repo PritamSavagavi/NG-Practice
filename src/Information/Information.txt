@@ -12,3 +12,14 @@ NOTE: The "--dry-run" option means no changes were made.
 bhai hum inspect element me jake flex modification kar sakte hai waaaav!!
 
 apiService = inject(ApiService); instead of injecting using constructor we can do this ...
+
+
+
+//GIT
+1. git status
+2. either git add. and git commit -m 'commit message'
+else
+git commit -a -m 'commit message'
+git pull
+resolve conflicts
+git push
